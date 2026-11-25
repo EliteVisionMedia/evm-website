@@ -1,6 +1,4 @@
 import Reveal from '../components/Reveal';
-import StatCounter from '../components/StatCounter';
-import { stats } from '../data/site';
 
 const team = [
   { cls: 'row-span-2', src: '/images/work/product/product-07.webp', alt: 'Campaign shoot by Elite Vision Media', pos: 'object-[60%_40%]' },

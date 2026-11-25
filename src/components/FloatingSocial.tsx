@@ -1,11 +1,13 @@
-import { useEffect, useRef, useState, type ComponentType } from 'react';
+import { forwardRef, useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
-import { Instagram, Linkedin, Share2, X } from 'lucide-react';
+import { Instagram, Linkedin, Share2, X, type LucideIcon, type LucideProps } from 'lucide-react';
 import { contact, socials } from '../data/site';
 
-function WhatsAppIcon({ size = 18 }: { size?: number }) {
+const WhatsAppIcon = forwardRef<SVGSVGElement, LucideProps>(function WhatsAppIcon({ size = 18, ...props }, ref) {
   return (
     <svg
+      ref={ref}
+      {...props}
       width={size}
       height={size}
       viewBox="0 0 24 24"
@@ -20,14 +22,14 @@ function WhatsAppIcon({ size = 18 }: { size?: number }) {
       <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1" />
     </svg>
   );
-}
+});
 
 interface FloatingLink {
   key: string;
   label: string;
   href: string;
   ariaLabel: string;
-  Icon: ComponentType<{ size?: number }>;
+  Icon: LucideIcon;
 }
 
 const instagram = socials.find((s) => s.icon === 'instagram');

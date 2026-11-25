@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
-import { ArrowRight, Code2, Megaphone, Play, Send, ShoppingCart } from 'lucide-react';
+import { ArrowRight, Code2, Megaphone, Play, Send } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const ease = [0.22, 1, 0.36, 1] as const;

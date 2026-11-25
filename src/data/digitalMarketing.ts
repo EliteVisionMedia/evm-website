@@ -1,4 +1,4 @@
-import { BarChart3, ClipboardList, Compass, MapPin, MousePointerClick, Newspaper, PenLine, RefreshCcw, Rocket, Search, Share2, type LucideIcon } from 'lucide-react';
+import { BarChart3, ClipboardList, Compass, MapPin, MousePointerClick, PenLine, RefreshCcw, Rocket, Search, Share2, type LucideIcon } from 'lucide-react';
 
 /** Original copy for /services/digital-marketing. No client names, rankings or performance promises. */
 
